@@ -1,19 +1,14 @@
+## 如何使用restclient来发送post请求参数？	
 
+​	
 
-
-	如何使用restclient来发送post请求参数？
-	
-	
-	
 	运行 restclient ，点选Method选项卡的“POST”方法。然后选择增加HTTP头字段选项卡，
-	下拉列表中选择”自定义HTTP头字段“的选项，配置上 名称：Content-Type  
-	值：application/json;charset=UTF-8，
+	下拉列表中选择”自定义HTTP头字段“的选项，配置上 名称：Content-Type  值：application/json;charset=UTF-8，
 	再在正文里面写入body字符串，也就是你的请求条件，如：query=xpsF
 	这样就可以传递post的参数了。
-	
-	
-	
-	
+
+
+
 	使用restclient的请求为 ：POST
 	
 	HTTP头字段为： Content-Type:application/json;charset=UTF-8

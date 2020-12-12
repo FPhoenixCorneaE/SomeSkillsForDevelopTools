@@ -9,18 +9,18 @@ Git clone 大文件代码，造成克隆中断，retry多次还是出现如下�
 	fatal: The remote end hung up unexpectedly
 	fatal: early EOF
 	fatal: index-pack failed
-	
-	
-	
-解决方案一：（通过命令来完成）
 
-# 为 git 添加配置项，通过下面的命令可以简单完成
-# 在这之前可以执行 git config -l 命令看看已有配置项有哪些
+​	
+
+### 解决方案一：（通过命令来完成）
+
+#### 为 git 添加配置项，通过下面的命令可以简单完成
+#### 在这之前可以执行 git config -l 命令看看已有配置项有哪些
 git config --add core.compression -1
 
 
 
-解决方案二：（通过修改 .gitconfig 文件，该文件在用户目录下）
+### 解决方案二：（通过修改 .gitconfig 文件，该文件在用户目录下）
 
 [user]
     name = ...

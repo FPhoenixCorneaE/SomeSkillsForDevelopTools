@@ -22,14 +22,15 @@
 			}
 		
 		}
-		
-		
+
+
+​		
 二、在项目的build.gradle文件中添加如下代码：
-	
+​	
 	apply from: 'config/artifact_config.gradle'
 	
 	buildscript {
-
+	
 		repositories {
 			jcenter()
 		}
@@ -47,8 +48,9 @@
 		apply plugin: "com.jfrog.artifactory"
 		apply plugin: 'maven-publish'
 	}
-	
-	
+
+
+​	
 三、在module的build.gradle文件中添加如下代码：
 
 	// 发布渠道的AAR至artifactory仓库时，进行一下几步操作
@@ -66,8 +68,9 @@
 	def libsVersionName = '1.2.5'
 	// 定义library versionCode值，按需定义
 	def libsVersionCode = 125
-	
-	
+
+
+​	
 	android {
 		
 		defaultConfig {
@@ -189,7 +192,8 @@
 		artifactoryPublish.mustRunAfter assemble
 	
 	}
-	
-	
-	
-	
+
+
+​	
+​	
+​	
