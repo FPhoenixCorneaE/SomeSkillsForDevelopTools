@@ -8,8 +8,8 @@ Help选项 --> 选择Edit Custom VM Options...
 
 -Xms2048m
 -Xmx8196m
--XX:MaxPermSize=700m
--XX:ReservedCodeCacheSize=480m
+-XX:MaxPermSize=2048m
+-XX:ReservedCodeCacheSize=2048m
 -ea
 -Dsun.io.useCanonCaches=false
 -Djava.net.preferIPv4Stack=true
